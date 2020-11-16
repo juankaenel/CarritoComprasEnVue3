@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+        <h1>Carrito de compras</h1>
+        {{productos}}
+        <hr>
+        <div class="row">
+          <Card/>
+        </div>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Card from './components/Card'
+import { computed, onMounted } from 'vue'
+import { useStore } from 'vuex'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Card,
+  },
+  setup(){
+    const store = useStore()
+    onMounted(() => {
+      store.dispatch('fetchData')
+    })
+    const productos = computed(()=>store.state.productos)
+    return {productos}
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
