@@ -1,38 +1,38 @@
 [
     {
-        "precio": 500,
+        "precio": 100000,
         "id": 1,
-        "title": "Café",
+        "title": "Notebook Lenovo",
         "thumbnailUrl": "https://picsum.photos/id/0/600"
     },
     {
-        "precio": 300,
+        "precio": 3000,
         "id": 2,
-        "title": "Pizza",
+        "title": "Cuadro Bariloche",
         "thumbnailUrl": "https://picsum.photos/id/10/600"
     },
     {
         "precio": 100,
         "id": 3,
-        "title": "Agua",
+        "title": "Fondo Marketing",
         "thumbnailUrl": "https://picsum.photos/id/20/600"
     },
     {
-        "precio": 50,
+        "precio": 100,
         "id": 4,
-        "title": "Sandía",
+        "title": "Café Express",
         "thumbnailUrl": "https://picsum.photos/id/30/600"
     },
     {
-        "precio": 10,
+        "precio": 500,
         "id": 5,
-        "title": "Mango",
+        "title": "Cuadro Gato",
         "thumbnailUrl": "https://picsum.photos/id/40/600"
     },
     {
-        "precio": 150,
+        "precio": 500,
         "id": 6,
-        "title": "Chela",
+        "title": "Cuadro Mar",
         "thumbnailUrl": "https://picsum.photos/id/50/600"
     }
 ]
